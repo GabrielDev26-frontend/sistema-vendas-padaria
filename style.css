@@ -28,3 +28,26 @@ button {
 button:hover {
     background-color: #294b78;
 }
+
+body.alto-contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste label {
+    color: #ffeb3b;
+}
+
+body.alto-contraste button {
+    background-color: #ffeb3b;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+body.alto-contraste input {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #ffeb3b;
+}
