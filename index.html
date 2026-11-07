@@ -33,24 +33,7 @@
         <button onclick="salvarVenda()">Salvar Venda</button>
         <button onclick="mostrarTela('menu')">Cancelar</button>
     </section>
-
-    <script>
-        function mostrarTela(tela) {
-            document.getElementById('venda').hidden = tela !== 'venda';
-        }
-
-        function salvarVenda() {
-            const produto = document.getElementById('produto').value.trim();
-            const quantidade = Number(document.getElementById('quantidade').value);
-            const valor = Number(document.getElementById('valor').value);
-
-            if (!produto || quantidade < 1 || valor <= 0) {
-                alert('Preencha todos os campos corretamente.');
-                return;
-            }
-
-            alert('Venda registrada com sucesso!');
-        }
-    </script>
+<script src="script.js"></script>
+   
 </body>
 </html>
