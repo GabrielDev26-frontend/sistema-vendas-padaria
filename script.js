@@ -31,3 +31,13 @@ if (typeof module !== 'undefined') {
         salvarVenda
     };
 }
+
+function alternarContraste() {
+    const ativo = document.body.classList.toggle('alto-contraste');
+    const botao = document.getElementById('contraste');
+
+    botao.setAttribute('aria-pressed', ativo);
+    botao.textContent = ativo
+        ? 'Desativar alto contraste'
+        : 'Ativar alto contraste';
+}
