@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Registrada - Sistema de Vendas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Venda registrada com sucesso!</h1>
+
+    <ul class="resumo-venda">
+        <li><strong>Produto:</strong> {{ venda.produto }}</li>
+        <li><strong>Quantidade:</strong> {{ venda.quantidade }}</li>
+        <li><strong>Valor:</strong> R$ {{ "%.2f"|format(venda.valor) }}</li>
+        <li><strong>Data da venda:</strong> {{ venda.data_venda.strftime("%d/%m/%Y %H:%M") }}</li>
+    </ul>
+
+    <nav>
+        <a href="{{ url_for('venda') }}"><button type="button">Nova Venda</button></a>
+        <a href="{{ url_for('menu') }}"><button type="button">Voltar ao Menu</button></a>
+        <button type="button" id="contraste" aria-pressed="false" onclick="alternarContraste()">
+            Ativar alto contraste
+        </button>
+    </nav>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

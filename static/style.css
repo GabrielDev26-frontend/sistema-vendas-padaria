@@ -29,6 +29,23 @@ button:hover {
     background-color: #294b78;
 }
 
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+.resumo-venda {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.mensagem-erro {
+    color: #b00020;
+    font-weight: bold;
+}
+
 body.alto-contraste {
     background-color: #000;
     color: #fff;
@@ -50,4 +67,8 @@ body.alto-contraste input {
     background-color: #000;
     color: #fff;
     border: 2px solid #ffeb3b;
+}
+
+body.alto-contraste .mensagem-erro {
+    color: #ff5252;
 }

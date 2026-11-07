@@ -14,16 +14,13 @@ jobs:
       - name: Baixar código
         uses: actions/checkout@v4
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
         with:
-          node-version: 24
+          python-version: "3.12"
 
       - name: Instalar dependências
-        run: npm install
+        run: pip install -r requirements.txt
 
-      - name: Executar testes
-        run: npm test
-
-      - name: Gerar Coverage
-        run: npm run coverage
+      - name: Executar testes com cobertura
+        run: pytest --cov=. --cov-report=term-missing
