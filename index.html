@@ -10,11 +10,14 @@
     <h1>Sistema de Vendas</h1>
     <h2>Padaria 2 Corações</h2>
 
-    <nav>
-        <button onclick="mostrarTela('venda')">Registrar Venda</button>
-        <button onclick="alert('Área de produtos em desenvolvimento!')">Produtos</button>
-        <button onclick="alert('Consulta de vendas em desenvolvimento!')">Consultar Vendas</button>
-    </nav>
+   <nav>
+    <button onclick="mostrarTela('venda')">Registrar Venda</button>
+    <button onclick="alert('Área de produtos em desenvolvimento!')">Produtos</button>
+    <button onclick="alert('Consulta de vendas em desenvolvimento!')">Consultar Vendas</button>
+    <button type="button" id="contraste" aria-pressed="false" onclick="alternarContraste()">
+        Ativar alto contraste
+    </button>
+</nav>
 
     <section id="venda" hidden>
         <h2>Registrar Venda</h2>
