@@ -21,5 +21,7 @@ O sistema busca oferecer uma interface simples, com textos claros, bom contraste
 ## Status
 Em desenvolvimento.
 
+Projeto em revisão técnica para avaliar organização, clareza e manutenção do código.
+
 ## Autor
 Gabriel Souza
