@@ -1,0 +1,12 @@
+{
+  "name": "sistema-vendas-padaria",
+  "version": "1.0.0",
+  "description": "Sistema de vendas da Padaria 2 Corações",
+  "scripts": {
+    "test": "node test.js",
+    "coverage": "c8 --reporter=text node test.js"
+  },
+  "devDependencies": {
+    "c8": "^10.1.3"
+  }
+}
